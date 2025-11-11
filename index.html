@@ -2,14 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pixmin Privacy Policy</title>
+  <title>Pixmin – Smart Image Converter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 60px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    p.tagline {
+      font-size: 1.3em;
+      margin-top: 10px;
+      color: #e0f7fa;
+    }
+
+    .features {
+      background: rgba(255,255,255,0.1);
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: slideUp 1s ease;
+    }
+
+    .features h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      font-size: 1.2em;
+      margin: 12px 0;
+      padding: 10px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .features li:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta {
+      margin: 50px 0;
+    }
+
+    .download-btn {
+      background: #ff9800;
+      color: #fff;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: bold;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #e68900;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #ffcc80;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy for Pixmin</h1>
-  <p>Pixmin does not collect, store, or share any personal data.</p>
-  <p>All image conversions and compressions happen locally on your device. No files are uploaded to any server.</p>
-  <p>We do not use analytics, ads, or tracking technologies.</p>
-  <p>If you have any questions, contact us at <a href="mailto:skkaljjs@gmail.com">skkaljjs@gmail.com</a>.</p>
-  <p>Made with ❤️ .</p>
+  <header>
+    <img src="assets/pixmin-logo.png" alt="Pixmin Logo" class="logo">
+    <h1>Pixmin</h1>
+    <p class="tagline">Convert and compress images effortlessly</p>
+  </header>
+
+  <section class="features">
+    <h2>Features</h2>
+    <ul>
+      <li>🔄 Convert instantly between JPG, PNG, WEBP, and more</li>
+      <li>📉 Compress images without losing quality</li>
+      <li>⚡ Lightning-fast performance in a tiny app size</li>
+      <li>🔒 Privacy-first — all conversions happen on your device</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h2>Download Pixmin</h2>
+    <a href="https://uptodown.com/android/pixmin" class="download-btn">Get it Free</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Pixmin</p>
+    <a href="https://pixmin-privacy.vercel.app/privacy">Privacy Policy</a>
+  </footer>
 </body>
 </html>
