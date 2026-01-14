@@ -1,0 +1,21 @@
+Privacy Policy
+
+This Privacy Policy describes how your personal information is handled in the PicToPDF app.
+
+Information We Collect
+
+We do not collect any personal information from you. All images and PDFs created are stored locally on your device and are not transmitted to our servers.
+
+Permissions
+
+The app requests the following permissions:
+
+- Storage: To access images from your gallery and save the generated PDFs.
+
+Third-Party Services
+
+We use Google AdMob for advertising. AdMob may collect information about you to serve personalized ads. For more information, please see Google's Privacy Policy.
+
+Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
