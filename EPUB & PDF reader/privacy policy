@@ -1,0 +1,36 @@
+Privacy Policy for EPUB & PDF Reader
+
+Last updated: January 8, 2026
+
+avionti ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our application, EPUB & PDF Reader (the "App"), handles information.
+
+The App is designed to work completely offline. Your files, data, and usage information never leave your device.
+
+1. Information We Do Not Collect
+
+We do not collect, store, or transmit any personal information. This includes, but is not limited to:
+- Your name, email address, or contact information.
+- Your files, documents, or the content of your books.
+- Usage analytics, crash reports, or device identifiers.
+
+2. How the App Works
+
+- File Access: To build your library, the App requires permission to scan your device's storage. It looks for supported file types (.pdf, .epub) in common directories like Documents, Downloads, and Books. This process is done entirely on your device. File metadata (like filename, path, and modification date) is stored locally to create your library.
+- Local Storage: The App uses local storage (such as SharedPreferences) to save your settings, preferences, and book library information for your convenience. This data is stored only on your device and is never transmitted to us or any third party.
+
+3. Permissions
+
+The App will request the following permissions:
+- Storage/File Access: This is necessary to find and open your book files from your device's storage. The App cannot function without this permission.
+
+4. Third-Party Services
+
+The App uses third-party libraries to render PDF and EPUB files. These libraries operate locally on your device as part of the App. To the best of our knowledge, they do not collect or transmit any data.
+
+5. Children's Privacy
+
+Since we do not collect any personal information, we do not knowingly collect information from children under the age of 13.
+
+6. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App or on our store listing page. You are advised to review this Privacy Policy periodically for any changes.
