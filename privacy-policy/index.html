@@ -1,106 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pixmin Privacy Policy</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0072ff, #00c6ff);
-      color: #fff;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixmin - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      padding: 60px 20px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
 
-    .logo {
-      width: 100px;
-      margin-bottom: 15px;
-    }
+        header {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+            animation: fadeIn 1.2s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
 
-    h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    p.tagline {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #e0f7fa;
-    }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
 
-    .policy {
-      background: rgba(255,255,255,0.1);
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 800px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      text-align: left;
-      animation: slideUp 1s ease;
-    }
+        header .tagline {
+            font-size: 1.2em;
+            color: #e0f7fa;
+            margin-top: 10px;
+        }
 
-    .policy h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+        header .date {
+            font-size: 0.95em;
+            color: #b3e5fc;
+            margin-top: 15px;
+        }
 
-    .policy p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      margin-bottom: 20px;
-      color: #f1f1f1;
-    }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-    footer {
-      background: rgba(0,0,0,0.3);
-      padding: 20px;
-      font-size: 0.9em;
-    }
+        .policy-section {
+            background: #fff;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            animation: slideUp 0.8s ease;
+        }
 
-    footer a {
-      color: #ffcc80;
-      text-decoration: none;
-      margin-left: 10px;
-    }
+        .policy-section h2 {
+            color: #0072ff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #00c6ff;
+            padding-bottom: 10px;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        .policy-section h3 {
+            color: #00c6ff;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
 
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+        .policy-section p {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .policy-section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .policy-section li {
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 1.05em;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+            border-left: 4px solid #0072ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box strong {
+            color: #0072ff;
+        }
+
+        .permissions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .permissions-table th {
+            background: #0072ff;
+            color: #fff;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .permissions-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .permissions-table tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+
+        .third-party {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .third-party h4 {
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+
+        .third-party p {
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .third-party a {
+            color: #0072ff;
+            text-decoration: none;
+        }
+
+        .third-party a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact-info a {
+            color: #0072ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .policy-section {
+                padding: 20px;
+            }
+
+            .policy-section h2 {
+                font-size: 1.4em;
+            }
+
+            .permissions-table {
+                font-size: 0.95em;
+            }
+
+            .permissions-table th,
+            .permissions-table td {
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="assets/pixmin-logo.png" alt="Pixmin Logo" class="logo">
-    <h1>Pixmin Privacy Policy</h1>
-    <p class="tagline">Your privacy, protected by design</p>
-  </header>
+    <header>
+        <div class="logo">🔒</div>
+        <h1>Pixmin Privacy Policy</h1>
+        <p class="tagline">Your privacy, protected by design</p>
+        <p class="date">Last Updated: March 2026</p>
+    </header>
 
-  <section class="policy">
-    <h2>Our Commitment</h2>
-    <p>Pixmin does not collect, store, or share any personal data. All image conversions and compressions happen locally on your device. No files are uploaded to any server.</p>
+    <div class="container">
+        <!-- Overview Section -->
+        <div class="policy-section">
+            <h2>1. Overview</h2>
+            <p>Pixmin ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application, Pixmin (the "App").</p>
+            <div class="highlight-box">
+                <strong>Our Core Principle:</strong> We do not collect, store, or transmit any of your personal information or images. All processing happens on your device.
+            </div>
+        </div>
 
-    <h2>No Tracking</h2>
-    <p>We do not use analytics, ads, or tracking technologies. Your usage of Pixmin remains private and secure.</p>
+        <!-- Information Collection -->
+        <div class="policy-section">
+            <h2>2. Information We Collect</h2>
+            <p>We collect minimal information to provide our services:</p>
+            
+            <h3>✓ What We Collect:</h3>
+            <ul>
+                <li><strong>Device Permissions:</strong> Camera, Gallery, and Storage access (only when you grant permission)</li>
+                <li><strong>Usage Data:</strong> Basic analytics about app usage (via AppMetrica)</li>
+                <li><strong>Advertising Data:</strong> Ad networks may collect device information for ad personalization</li>
+            </ul>
 
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:skkaljjs@gmail.com">skkaljjs@gmail.com</a>.</p>
-  </section>
+            <h3>✗ What We DO NOT Collect:</h3>
+            <ul>
+                <li>Personal information (name, email, phone number)</li>
+                <li>Location data</li>
+                <li>Contact information</li>
+                <li>Biometric data</li>
+                <li>Any other sensitive personal data</li>
+            </ul>
+        </div>
 
-  <footer>
-    <p>© 2025 Pixmin</p>
-    <a href="/">Back to Home</a>
-  </footer>
+        <!-- Data Usage -->
+        <div class="policy-section">
+            <h2>3. How We Use Your Information</h2>
+            <p>Your information is used only for:</p>
+            <ul>
+                <li>Enable core app functionality (image compression, format conversion, PDF generation)</li>
+                <li>Display relevant advertisements</li>
+                <li>Improve app performance and user experience</li>
+                <li>Comply with legal obligations</li>
+            </ul>
+        </div>
+
+        <!-- Data Processing -->
+        <div class="policy-section">
+            <h2>4. Data Processing</h2>
+            <div class="highlight-box">
+                <strong>All image processing happens on your device:</strong>
+            </div>
+            <ul>
+                <li>Image compression is performed locally</li>
+                <li>Format conversion is performed locally</li>
+                <li>PDF generation is performed locally</li>
+                <li>No images are uploaded to our servers</li>
+                <li>No images are shared with third parties</li>
+            </ul>
+        </div>
+
+        <!-- Data Storage -->
+        <div class="policy-section">
+            <h2>5. Data Storage</h2>
+            <p>Processed images are stored locally on your device:</p>
+            <ul>
+                <li><strong>Location:</strong> /storage/emulated/0/Pictures/Pixmin/</li>
+                <li>You have full control over these files</li>
+                <li>You can delete files at any time</li>
+                <li>Uninstalling the app removes all associated data</li>
+            </ul>
+        </div>
+
+        <!-- Third-Party Services -->
+        <div class="policy-section">
+            <h2>6. Third-Party Services</h2>
+            <p>We use the following third-party services:</p>
+
+            <div class="third-party">
+                <h4>📱 Google Mobile Ads (AdMob)</h4>
+                <p>• Displays advertisements in the app</p>
+                <p>• May collect device information for ad personalization</p>
+                <p>• <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy →</a></p>
+            </div>
+
+            <div class="third-party">
+                <h4>📊 AppMetrica (Yandex)</h4>
+                <p>• Provides analytics about app usage</p>
+                <p>• Does not collect personal information</p>
+                <p>• <a href="https://yandex.com/legal/privacy/" target="_blank">Privacy Policy →</a></p>
+            </div>
+
+            <div class="third-party">
+                <h4>💳 Google Play Billing</h4>
+                <p>• Processes in-app purchases</p>
+                <p>• <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy →</a></p>
+            </div>
+        </div>
+
+        <!-- Permissions -->
+        <div class="policy-section">
+            <h2>7. Permissions</h2>
+            <p>The app requests the following permissions:</p>
+            <table class="permissions-table">
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAMERA</strong></td>
+                        <td>To take photos directly in the app</td>
+                    </tr>
+                    <tr>
+                        <td><strong>READ_MEDIA_IMAGES</strong></td>
+                        <td>To access your photo gallery</td>
+                    </tr>
+                    <tr>
+                        <td><strong>READ_EXTERNAL_STORAGE</strong></td>
+                        <td>To access images on your device (Android 12 and below)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WRITE_EXTERNAL_STORAGE</strong></td>
+                        <td>To save processed images (Android 10 and below)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INTERNET</strong></td>
+                        <td>For ads and analytics</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>You can revoke any permission at any time through your device settings.</em></p>
+        </div>
+
+        <!-- Children's Privacy -->
+        <div class="policy-section">
+            <h2>8. Children's Privacy</h2>
+            <p>Pixmin does not knowingly collect information from children under 13. The app is designed to be safe for all ages. We do not require user accounts or collect personal information from any user, regardless of age.</p>
+        </div>
+
+        <!-- Data Security -->
+        <div class="policy-section">
+            <h2>9. Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect your data:</p>
+            <ul>
+                <li>All processing happens on your device</li>
+                <li>No data is transmitted to external servers</li>
+                <li>No user accounts or authentication required</li>
+                <li>No sensitive data collection</li>
+            </ul>
+        </div>
+
+        <!-- Your Rights -->
+        <div class="policy-section">
+            <h2>10. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Revoke app permissions at any time</li>
+                <li>Delete all app data</li>
+                <li>Uninstall the app</li>
+                <li>Request information about what data we collect (minimal)</li>
+                <li>Opt out of personalized ads</li>
+            </ul>
+        </div>
+
+        <!-- Policy Changes -->
+        <div class="policy-section">
+            <h2>11. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date above. Your continued use of the app constitutes your acceptance of the updated Privacy Policy.</p>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="policy-section">
+            <h2>12. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:skkaljjs@gmail.com">skkaljjs@gmail.com</a></p>
+                <p><strong>Support:</strong> Contact us through the Google Play Store</p>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="policy-section" style="background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%); border-left: 4px solid #0072ff;">
+            <h2 style="color: #0072ff; border-bottom: 3px solid #00c6ff;">Privacy Summary</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 12px;">✅ <strong>All processing is on-device</strong></li>
+                <li style="margin-bottom: 12px;">✅ <strong>No personal data collection</strong></li>
+                <li style="margin-bottom: 12px;">✅ <strong>No image uploads</strong></li>
+                <li style="margin-bottom: 12px;">✅ <strong>No third-party sharing</strong></li>
+                <li style="margin-bottom: 12px;">✅ <strong>Safe for children</strong></li>
+                <li style="margin-bottom: 12px;">✅ <strong>Full user control</strong></li>
+                <li style="margin-bottom: 12px;">✅ <strong>Transparent about ads</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pixmin. All rights reserved.</p>
+        <p>
+            <a href="/">Back to Home</a>
+            <a href="mailto:skkaljjs@gmail.com">Contact Us</a>
+        </p>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #b3e5fc;">
+            Privacy Policy Last Updated: March 2026
+        </p>
+    </footer>
 </body>
 </html>
