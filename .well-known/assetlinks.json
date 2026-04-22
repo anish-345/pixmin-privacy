@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pixmin.app",
+      "sha256_cert_fingerprints": [
+        "B6:F7:5C:77:3E:2A:2D:B3:E8:FB:CC:32:07:64:45:5C:98:A3:C1:AB:68:A3:BC:A1:97:27:24:38:17:BC:BA:80"
+      ]
+    }
+  }
+]

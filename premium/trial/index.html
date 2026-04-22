@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening App...</title>
+    <script>
+        window.onload = function() {
+            // Keep the query parameters intact
+            var query = window.location.search;
+            var appSchemeUrl = "pixmin://premium/trial" + query;
+            
+            // Try to open the app via custom scheme
+            window.location.href = appSchemeUrl;
+            
+            // Fallback to app store after a delay if app is not installed
+            setTimeout(function() {
+                // Uncomment and update with your Play Store link if desired
+                // window.location.href = "https://play.google.com/store/apps/details?id=com.pixmin.app";
+            }, 2500);
+        };
+    </script>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .message { margin-top: 20px; font-size: 1.2em; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="message">
+        Opening in app...<br>
+        If nothing happens, make sure the app is installed.
+    </div>
+</body>
+</html>
